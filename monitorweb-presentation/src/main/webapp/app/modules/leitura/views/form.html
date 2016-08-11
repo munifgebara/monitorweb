@@ -1,0 +1,27 @@
+<form name="LeituraForm" gumga-form novalidate>
+		
+	<div gumga-form-class="device">
+		<label gumga-translate-tag="leitura.device">device</label>
+		<input gumga-error type="text" name="device" ng-model="leitura.data.device"  class="form-control" />
+	</div>		
+	<div gumga-form-class="sensor1">
+		<label gumga-translate-tag="leitura.sensor1">sensor1</label>
+		<input gumga-error type="text" name="sensor1" ng-model="leitura.data.sensor1"  class="form-control" />
+	</div>		
+	<div gumga-form-class="sensor2">
+		<label gumga-translate-tag="leitura.sensor2">sensor2</label>
+		<input gumga-error type="text" name="sensor2" ng-model="leitura.data.sensor2"  class="form-control" />
+	</div>		
+	<div gumga-form-class="sensor3">
+		<label gumga-translate-tag="leitura.sensor3">sensor3</label>
+		<input gumga-error type="text" name="sensor3" ng-model="leitura.data.sensor3"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="leitura.list"
+            submit="leitura.methods.put(leitura.data)"
+            position="right"
+            valid="LeituraForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>
